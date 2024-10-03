@@ -22,15 +22,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 window.location.href='../todo_list.php';</script>";
             } else {
                 echo "<script>alert('Неверный логин или пароль.'); 
-                window.location.href='../login.php';</script>";
+                window.location.href='../index.php';</script>";
             }
         } else {
             echo "<script>alert('Неверный логин или пароль.'); 
-            window.location.href='../login.php';</script>";
+            window.location.href='../index.php';</script>";
         }
     } else {
         echo "<script>alert('Пожалуйста, заполните все поля.'); 
-        window.location.href='../login.php';</script>";
+        window.location.href='../index.php';</script>";
     }
 }
 ?>

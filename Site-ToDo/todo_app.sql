@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Сен 17 2024 г., 23:24
+-- Время создания: Окт 03 2024 г., 13:08
 -- Версия сервера: 8.0.30
--- Версия PHP: 7.4.30
+-- Версия PHP: 8.1.9
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -54,7 +54,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `username`, `password_hash`) VALUES
-(7, 'qwerty', '$2y$10$CHQRHX7Kp9.PRPSg4t1Q9OHQEtzEzQzv8giAoMr8flckV3jjPfEDG');
+(1, 'oleg1234', '$2y$10$PxgQrZ0pjoHCdwvGa.CdQeXh98eh/0WsfXigZKOujEkaGMzzfMUym');
 
 --
 -- Индексы сохранённых таблиц
@@ -88,7 +88,7 @@ ALTER TABLE `tasks`
 -- AUTO_INCREMENT для таблицы `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 
 --
 -- Ограничения внешнего ключа сохраненных таблиц

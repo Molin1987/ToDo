@@ -26,6 +26,7 @@ body {
     border-radius: 5px;
 }
 
+
 #filter-btn, #theme-toggle {
     background-color: transparent;
     border: none;
@@ -118,8 +119,8 @@ body {
 
 .actions img {
     cursor: pointer;
-    width: 20px; /* Измените, если иконки другого размера */
-    height: 20px; /* Измените, если иконки другого размера */
+    width: 20px; 
+    height: 20px; 
     margin-left: 10px;
     transition: opacity 0.3s ease;
 }
@@ -161,6 +162,18 @@ body.dark-theme .actions img {
     filter: invert(1);
 }
 
+body.dark-theme input{
+    background-color: #333;
+    color: white;
+}
+
+body.dark-theme #search-task {
+    background-color: #333;
+}
+
+body.dark-theme input::placeholder{
+    color: white;
+}
 
 .logout {
     position: absolute;
@@ -346,7 +359,6 @@ body.dark-theme .task-item.completed .task-text {
 }
 
 
-/* Стиль для инпута заголовка задачи */
 #note-title {
     width: 480px;
     padding: 10px;

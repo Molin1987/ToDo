@@ -4,8 +4,8 @@ include '../database/connect.php';
 
 $userId = $_SESSION['user_id'];
 
-$search = isset($_GET['search']) ? mysqli_real_escape_string($conn, trim($_GET['search'])) : '';
-$filter = isset($_GET['filter']) ? mysqli_real_escape_string($conn, $_GET['filter']) : 'all';
+$search = isset($_GET['search']) ? trim($_GET['search']) : '';
+$filter = isset($_GET['filter']) ? trim($_GET['filter']) : 'all';
 
 $sql = "SELECT id, title, description, is_completed FROM tasks WHERE user_id = '$userId'";
 
